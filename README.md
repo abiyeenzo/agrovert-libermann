@@ -56,23 +56,18 @@ agrovert-libermann/
 ├── css/
 │   └── style.css
 │
-├── images/
-│   ├── logo.png
-│   ├── hero.jpg
-│   ├── service1.jpg
-│   ├── service2.jpg
-│   ├── service3.jpg
-│   └── galerie/
-│       ├── img1.jpg
-│       ├── img2.jpg
-│       ├── img3.jpg
-│       └── img4.jpg
-│
-└── assets/
-├── video/
-│   └── presentation.mp4
-└── audio/
-└── ambiance-nature.mp3
+└── images/
+    ├── logo.png
+    ├── hero.jpg
+    ├── service1.jpg
+    ├── service2.jpg
+    ├── service3.jpg
+    └── galerie/
+        ├── img1.jpg
+        ├── img2.jpg
+        ├── img3.jpg
+        └── img4.jpg
+
 
 ```
 
