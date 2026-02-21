@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgroVert Libermann | Services</title>
+
+<style>
+
+/* ================= RESET ================= */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f7f2;
+color:#333;
+}
+
+/* ================= BANDEAU ================= */
+.bandeau{
+background:#1b5e20;
+color:white;
+padding:8px 0;
+overflow:hidden;
+white-space:nowrap;
+}
+
+.bandeau span{
+display:inline-block;
+padding-left:100%;
+animation:defilement 18s linear infinite;
+font-weight:bold;
+}
+
+@keyframes defilement{
+0%{transform:translateX(0);}
+100%{transform:translateX(-100%);}
+}
+
+/* ================= HEADER ================= */
+header{
+background:white;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+width:60px;
+}
+
+.logo h1{
+color:#2e7d32;
+font-size:22px;
+}
+
+/* ================= NAV ================= */
+nav a{
+text-decoration:none;
+margin-left:25px;
+color:#333;
+font-weight:600;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#2e7d32;
+}
+
+/* ================= HERO ================= */
+.hero{
+background:url('https://images.unsplash.com/photo-1464226184884-fa280b87c399') no-repeat center center/cover;
+height:50vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+position:relative;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+}
+
+.hero h2{
+position:relative;
+z-index:2;
+font-size:40px;
+}
+
+/* ================= SERVICES ================= */
+section{
+padding:70px 20px;
+max-width:1200px;
+margin:auto;
+text-align:center;
+}
+
+section h2{
+color:#2e7d32;
+font-size:30px;
+margin-bottom:40px;
+}
+
+.services{
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+justify-content:center;
+}
+
+.card{
+background:white;
+width:320px;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card h3{
+color:#2e7d32;
+margin:15px 0 10px;
+}
+
+.card p{
+padding:0 15px 20px;
+}
+
+/* ================= AVANTAGES ================= */
+.advantages{
+background:#e8f5e9;
+padding:60px 20px;
+margin-top:60px;
+border-radius:15px;
+}
+
+.adv-grid{
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+justify-content:center;
+margin-top:30px;
+}
+
+.adv{
+background:white;
+padding:20px;
+width:280px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.adv:hover{
+transform:translateY(-8px);
+}
+
+.adv h4{
+color:#2e7d32;
+margin-bottom:10px;
+}
+
+/* ================= FOOTER ================= */
+footer{
+background:#1b5e20;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:50px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+.hero h2{
+font-size:28px;
+}
+
+.services, .adv-grid{
+flex-direction:column;
+align-items:center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="bandeau">
+<span>Projet réalisé dans le cadre d’un exposé scolaire sur l’entrepreneuriat agricole — Collège Libermann</span>
+</div>
+
+<header>
+<div class="logo">
+<img src="images/logo.png" alt="Logo AgroVert">
+<h1>AgroVert Libermann</h1>
+</div>
+
+<nav>
+<a href="index.html">Accueil</a>
+<a href="apropos.html">À propos</a>
+<a href="services.html">Services</a>
+<a href="galerie.html">Galerie</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Nos Services Agricoles</h2>
+</section>
+
+<section>
+<h2>Ce que nous proposons</h2>
+
+<div class="services">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="Production bio">
+<h3>🌾 Production Biologique</h3>
+<p>Culture de fruits et légumes sans produits chimiques pour garantir qualité et sécurité alimentaire.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf" alt="Élevage">
+<h3>🐄 Élevage Responsable</h3>
+<p>Élevage respectueux du bien-être animal et respect des normes environnementales.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef" alt="Technologie">
+<h3>🚜 Agriculture Technologique</h3>
+<p>Utilisation de drones et outils modernes pour améliorer les rendements agricoles.</p>
+</div>
+
+</div>
+
+<div class="advantages">
+<h2>Pourquoi choisir AgroVert ?</h2>
+
+<div class="adv-grid">
+
+<div class="adv">
+<h4>✔ Expertise</h4>
+<p>Une équipe qualifiée et formée aux techniques agricoles modernes.</p>
+</div>
+
+<div class="adv">
+<h4>✔ Qualité</h4>
+<p>Des produits frais, naturels et conformes aux standards de qualité.</p>
+</div>
+
+<div class="adv">
+<h4>✔ Innovation</h4>
+<p>Adoption constante de technologies avancées pour améliorer la production.</p>
+</div>
+
+</div>
+</div>
+
+</section>
+
+<footer>
+© 2026 AgroVert Libermann | Entreprise Agricole Fictive
+</footer>
+
+</body>
+</html>
