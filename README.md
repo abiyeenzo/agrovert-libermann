@@ -109,7 +109,7 @@ images/screenshot-services.png
 1️⃣ Cloner le projet :
 
 ```bash
-git clone https://github.com/abiyeenzo/lestroismousquetaire.git
+git clone https://github.com/abiyeenzo/agrovert-libermann.git
 ````
 
 2️⃣ Ouvrir le dossier
