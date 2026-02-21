@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Accueil | Les Trois Mousquetaires</title>
+<title>AgroVert Libermann</title>
 
 <style>
 
@@ -12,102 +12,126 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family: 'Segoe UI', sans-serif;
+font-family:'Segoe UI', sans-serif;
 }
 
 body{
-background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-color:white;
-text-align:center;
+line-height:1.6;
+color:#333;
 }
 
 /* HEADER */
 header{
-background:rgba(0,0,0,0.7);
-padding:25px;
-backdrop-filter:blur(8px);
+background:linear-gradient(to right,#2e7d32,#66bb6a);
+color:white;
+text-align:center;
+padding:30px 20px;
 }
 
 header h1{
-font-size:28px;
+font-size:36px;
 letter-spacing:2px;
 }
 
 header p{
-margin-top:5px;
-font-size:14px;
+font-size:18px;
+margin-top:10px;
 }
 
-/* MAIN SECTION */
-.main{
-padding:60px 20px;
+/* NAVIGATION */
+nav{
+background:#1b5e20;
+text-align:center;
+padding:12px;
 }
 
-.main h2{
-font-size:32px;
-margin-bottom:20px;
-}
-
-.photo-groupe{
-width:280px;
-border-radius:20px;
-margin:20px 0;
-box-shadow:0 15px 35px rgba(0,0,0,0.5);
-transition:0.4s;
-}
-
-.photo-groupe:hover{
-transform:scale(1.05);
-}
-
-/* BUTTONS */
-.buttons{
-margin-top:30px;
-}
-
-.buttons a{
-display:inline-block;
-margin:10px;
-padding:12px 25px;
-background:white;
-color:black;
+nav a{
+color:white;
 text-decoration:none;
-border-radius:30px;
+margin:0 20px;
 font-weight:bold;
 transition:0.3s;
 }
 
-.buttons a:hover{
-background:#00c3ff;
+nav a:hover{
+color:#c8e6c9;
+}
+
+/* SECTIONS */
+section{
+padding:60px 20px;
+text-align:center;
+}
+
+section h2{
+margin-bottom:20px;
+color:#2e7d32;
+font-size:28px;
+}
+
+/* HERO */
+.hero{
+background:url('https://images.unsplash.com/photo-1500382017468-9049fed747ef') no-repeat center center/cover;
 color:white;
+padding:120px 20px;
 }
 
-/* MEDIA */
-.media{
-margin-top:50px;
+.hero h2{
+font-size:40px;
 }
 
-video{
+/* SERVICES */
+.services{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+}
+
+.card{
+background:#f1f8e9;
+padding:20px;
+width:280px;
 border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+transition:0.3s;
 }
 
-audio{
-margin-top:15px;
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+/* VIDEO */
+video{
+margin-top:20px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
 }
 
 /* FOOTER */
 footer{
-margin-top:60px;
-background:black;
-padding:15px;
-font-size:14px;
+background:#1b5e20;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
 }
 
 /* RESPONSIVE */
 @media(max-width:768px){
-.photo-groupe{width:200px;}
-.main h2{font-size:24px;}
+.services{
+flex-direction:column;
+align-items:center;
+}
+.hero h2{
+font-size:28px;
+}
 }
 
 </style>
@@ -116,46 +140,78 @@ font-size:14px;
 <body>
 
 <header>
-<h1>COLLÈGE LIBERMANN</h1>
-<p>Groupe d'Informatique : Les Trois Mousquetaires</p>
-<p>Objectif : Créer un site web statique</p>
-<p>Superviseur : Monsieur Wambo Sylvain</p>
+<h1>AGROVERT LIBERMANN</h1>
+<p>Cultivons l’avenir durablement 🌿</p>
 </header>
 
-<section class="main">
-<h2>Bienvenue sur notre site</h2>
+<nav>
+<a href="#apropos">À propos</a>
+<a href="#services">Services</a>
+<a href="#media">Médias</a>
+<a href="#contact">Contact</a>
+</nav>
 
-<img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac" 
-alt="Photo du groupe" class="photo-groupe">
+<section class="hero">
+<h2>Entreprise Agricole Innovante</h2>
+<p>Spécialisée dans l’agriculture moderne et durable.</p>
+</section>
 
+<section id="apropos">
+<h2>À propos de nous</h2>
 <p>
-Nous sommes trois élèves de 2nd C3 réunies sous le nom
-<strong>Les Trois Mousquetaires</strong>.
-Ce site présente notre univers, nos passions et notre créativité.
+AgroVert Libermann est une entreprise agricole fictive créée pour promouvoir
+l’agriculture durable, la production locale et l’innovation technologique.
+Nous cultivons des fruits, légumes et céréales en respectant l’environnement.
 </p>
+</section>
 
-<div class="buttons">
-<a href="#">Louisa</a>
-<a href="#">Aminata</a>
-<a href="#">Cyrianne</a>
+<section id="services">
+<h2>Nos Services</h2>
+
+<div class="services">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399">
+<h3>Production Bio</h3>
+<p>Culture de fruits et légumes biologiques sans pesticides chimiques.</p>
 </div>
 
-<div class="media">
-<h3>Vidéo de présentation</h3>
-<video width="320" controls>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf">
+<h3>Élevage Durable</h3>
+<p>Élevage respectueux du bien-être animal et de l’environnement.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+<h3>Technologie Agricole</h3>
+<p>Utilisation de drones et systèmes modernes pour optimiser les récoltes.</p>
+</div>
+
+</div>
+</section>
+
+<section id="media">
+<h2>Présentation Vidéo</h2>
+<video width="400" controls>
 <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
 </video>
 
-<h3>Musique libre</h3>
+<h3 style="margin-top:30px;">Ambiance Nature</h3>
 <audio controls>
 <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
 </audio>
-</div>
+</section>
 
+<section id="contact">
+<h2>Contact</h2>
+<p>Email : contact@agrovert-libermann.com</p>
+<p>Téléphone : +237 600 00 00 00</p>
+<p>Adresse : Yaoundé, Cameroun</p>
 </section>
 
 <footer>
-© 2026 - Les Trois Mousquetaires | Projet Scolaire
+© 2026 AgroVert Libermann | Entreprise Agricole Fictive
 </footer>
 
 </body>
