@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accueil | Les Trois Mousquetaires</title>
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+text-align:center;
+}
+
+/* HEADER */
+header{
+background:rgba(0,0,0,0.7);
+padding:25px;
+backdrop-filter:blur(8px);
+}
+
+header h1{
+font-size:28px;
+letter-spacing:2px;
+}
+
+header p{
+margin-top:5px;
+font-size:14px;
+}
+
+/* MAIN SECTION */
+.main{
+padding:60px 20px;
+}
+
+.main h2{
+font-size:32px;
+margin-bottom:20px;
+}
+
+.photo-groupe{
+width:280px;
+border-radius:20px;
+margin:20px 0;
+box-shadow:0 15px 35px rgba(0,0,0,0.5);
+transition:0.4s;
+}
+
+.photo-groupe:hover{
+transform:scale(1.05);
+}
+
+/* BUTTONS */
+.buttons{
+margin-top:30px;
+}
+
+.buttons a{
+display:inline-block;
+margin:10px;
+padding:12px 25px;
+background:white;
+color:black;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.buttons a:hover{
+background:#00c3ff;
+color:white;
+}
+
+/* MEDIA */
+.media{
+margin-top:50px;
+}
+
+video{
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+
+audio{
+margin-top:15px;
+}
+
+/* FOOTER */
+footer{
+margin-top:60px;
+background:black;
+padding:15px;
+font-size:14px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.photo-groupe{width:200px;}
+.main h2{font-size:24px;}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>COLLÈGE LIBERMANN</h1>
+<p>Groupe d'Informatique : Les Trois Mousquetaires</p>
+<p>Objectif : Créer un site web statique</p>
+<p>Superviseur : Monsieur Wambo Sylvain</p>
+</header>
+
+<section class="main">
+<h2>Bienvenue sur notre site</h2>
+
+<img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac" 
+alt="Photo du groupe" class="photo-groupe">
+
+<p>
+Nous sommes trois élèves de 2nd C3 réunies sous le nom
+<strong>Les Trois Mousquetaires</strong>.
+Ce site présente notre univers, nos passions et notre créativité.
+</p>
+
+<div class="buttons">
+<a href="#">Louisa</a>
+<a href="#">Aminata</a>
+<a href="#">Cyrianne</a>
+</div>
+
+<div class="media">
+<h3>Vidéo de présentation</h3>
+<video width="320" controls>
+<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+</video>
+
+<h3>Musique libre</h3>
+<audio controls>
+<source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+</audio>
+</div>
+
+</section>
+
+<footer>
+© 2026 - Les Trois Mousquetaires | Projet Scolaire
+</footer>
+
+</body>
+</html>
